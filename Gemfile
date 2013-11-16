@@ -7,6 +7,7 @@ gem 'rails', '3.2.14'
 
 gem 'sqlite3'
 gem 'simple_form'
+gem 'heroku'
 
 
 # Gems used only for assets and not required
