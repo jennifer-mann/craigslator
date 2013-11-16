@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html>
 <head>
   <title>Craigslator</title>
@@ -7,8 +9,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="container">
+		<%= yield %>
+	</div>
+	<div class="footer-wrapper">
+		<div class="footer">
+			2013 <a href="http://twitter.com/jendmann">@jendmann</a>
+		</div>
+</div>
 </body>
 </html>

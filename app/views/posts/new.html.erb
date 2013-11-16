@@ -1,0 +1,19 @@
+<div class="pure-g-r">
+    <div class="pure-u-1-5 l-box aside">
+        <h1>Craigslator</h1> 
+        <p>Ever wanted to make an **AWESOME** Craigslist post, but just found it 2 B too well-written????</p>
+        <p>@@@USE the CR@IGSLATOR@</p>
+        <p>post what u want to sell/buy ----------></p>
+        <p>GET AN AWESOME POST BAK</p>
+        <p>------------------------- ;)</p>
+    </div>
+    <div class="pure-u-4-5 l-box article">
+    <div class="form-wrapper">
+      <%= simple_form_for @post do |f| %>
+        <%= f.input :title, label: "posting title", input_html: { class: 'pure-input-1-3' } %>
+        <%= f.input :description, label: "posting description", input_html: { class: 'pure-input-1' } %>
+        <%= f.submit "continue" %>
+      <% end %>
+      </div>
+    </div>
+</div>
