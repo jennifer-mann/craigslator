@@ -1,15 +1,16 @@
 class Post < ActiveRecord::Base
   attr_accessible :description, :title
 
-  validates_presence_of 	:title, :description
+  validates_presence_of :title, :description
 
   def title
   	t = read_attribute :title
-  	rand_chars + t + rand_chars
+  	rand_chars + t + rand_chars if t.present?
   end
 
   def description
-  	to_craigslist read_attribute :description
+  	d = read_attribute :description
+  	d = to_craigslist(d) if d.present?
   end
 
   def to_craigslist(description)
